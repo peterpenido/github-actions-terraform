@@ -22,14 +22,14 @@ resource "aws_vpc" "vpc" {
   enable_dns_support   = var.enable-dns-support
   enable_dns_hostnames = var.enable-dns-hostnames
 
-  tags = merge(
-  module.label.tags,
-  tomap({
-  "Location", var.vpc-location
-  }
-  )
-  )
-}
+#   tags = merge(
+#   module.label.tags,
+#   tomap({
+#   "Location", var.vpc-location
+#   }
+#   )
+#   )
+# }
 
 # Creating an Internet Gateway
 
