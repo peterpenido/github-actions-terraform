@@ -21,7 +21,7 @@ resource "aws_vpc" "vpc" {
   instance_tenancy     = var.instance-tenancy
   enable_dns_support   = var.enable-dns-support
   enable_dns_hostnames = var.enable-dns-hostnames
-
+}
 #   tags = merge(
 #   module.label.tags,
 #   tomap({
