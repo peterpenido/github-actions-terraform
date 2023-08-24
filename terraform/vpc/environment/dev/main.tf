@@ -8,7 +8,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "petterpenidotf"
+    bucket = "peterpenidotf"
     key = "stg/tfdev.tfstate"
     region = "us-east-2"
   }
